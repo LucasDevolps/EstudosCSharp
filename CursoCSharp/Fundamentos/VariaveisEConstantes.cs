@@ -28,7 +28,7 @@ namespace CursoCSharp.Fundamentos
             Console.WriteLine("Idade: " + idade);
 
             // -128 até 127
-            sbyte saldoDeGols = sbyte.MinValue;
+            //sbyte saldoDeGols = sbyte.MinValue;
 
             short salario = short.MaxValue;
             Console.WriteLine("Salario: "+salario);

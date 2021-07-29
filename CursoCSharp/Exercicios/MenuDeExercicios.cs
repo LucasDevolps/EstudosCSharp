@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+
 using CursoCSharp.Exercicios.Calculos;
+
+
 
 namespace CursoCSharp.Exercicios
 {
     class MenuDeExercicios
     {
-        public static CalculoAlunos Executar()
+        public static void Executar()
         {
             Console.Clear();
             Console.WriteLine("=================================");
@@ -20,6 +22,7 @@ namespace CursoCSharp.Exercicios
             exercicios.Add("1 - Calculo da idade média dos alunos(a)");
             exercicios.Add("2 - Verificador de impar/par");
             exercicios.Add("3 - Pessoas maiores de 18");
+            exercicios.Add("4 - Calculo de salários");
 
             foreach (string exercicio in exercicios)
             {
@@ -30,11 +33,22 @@ namespace CursoCSharp.Exercicios
             string entrada = Console.ReadLine();
             int.TryParse(entrada, out int opcaoMenu);
 
+            Console.Clear();
             switch (opcaoMenu)
             {
                 case 1:
-                    Console.Clear();
+                    MediaAlunos.MediaDeNotas();
                     break;
+                case 2:
+                    ImparOuPar.ImparPar();
+                    break;
+                case 3:
+                    Maioridade.pessoasDeMaior();
+                    break;
+                case 4:
+                    Salarios.CalculoReajuste();
+                    break;
+
             }
         }   
 
