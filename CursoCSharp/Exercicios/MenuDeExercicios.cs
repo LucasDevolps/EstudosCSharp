@@ -23,6 +23,7 @@ namespace CursoCSharp.Exercicios
             exercicios.Add("2 - Verificador de impar/par");
             exercicios.Add("3 - Pessoas maiores de 18");
             exercicios.Add("4 - Calculo de salários");
+            exercicios.Add("5 - Mais alto e mais baixo da turma");
 
             foreach (string exercicio in exercicios)
             {
@@ -47,6 +48,9 @@ namespace CursoCSharp.Exercicios
                     break;
                 case 4:
                     Salarios.CalculoReajuste();
+                    break;
+                case 5:
+                    Turma.MaiorMenor();
                     break;
 
             }
