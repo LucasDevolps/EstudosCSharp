@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using CursoCSharp.Fundamentos;
 using CursoCSharp.EstruturaDeControle;
 using CursoCSharp.Exercicios;
+using CursoCSharp.ClassesEMetodos;
 
 namespace CursoCSharp {
     class Program {
@@ -40,7 +41,14 @@ namespace CursoCSharp {
                 {"Usando Break - Estruturas de Controle", UsandoBreak.Executar},
                 {"Usando Continue - Estruturas de Controle", UsandoContinue.Executar},
 
-                {"Exercicios", MenuDeExercicios.Executar},
+                {"Exercicios de fixação", MenuDeExercicios.Executar},
+
+                //Classes e Métodos 
+                {"Membros - Classes e Métodos", Membros.Executar},
+                {"Construtores - Classes e Métodos", Construtores.Executar},  
+                {"Metodos Com Retorno - Classes e Métodos", MetodosComRetorno.Executar},
+
+                {"Exercicios de Orientação a Obejetos", Objetos.Executar},
 
             });
 
