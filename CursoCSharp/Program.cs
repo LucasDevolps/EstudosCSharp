@@ -5,10 +5,11 @@ using CursoCSharp.Fundamentos;
 using CursoCSharp.EstruturaDeControle;
 using CursoCSharp.Exercicios;
 using CursoCSharp.ClassesEMetodos;
+using CursoCSharp.Colecoes;
 
 namespace CursoCSharp {
     class Program {
-        static void Main(string[] args) {
+        static void Main() {
             var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 // Fundamentos
                 {"Primeiro Programa - Fundamentos", PrimeiroPrograma.Executar},
@@ -55,7 +56,19 @@ namespace CursoCSharp {
                 {"Params - Classes e Métodos",Params.Executar },
                 {"Parametros Nomeados - Classes e Métodos", ParametrosNomeados.Executar },
                 {"Get Set - Classes e Métodos",  GetSet.Executar},
-                {"Props - Classes e Métodos", Props.Executar }
+                {"Props - Classes e Métodos", Props.Executar },
+                {"Readonlu - Classes e Métodos", ReadOnly.Executar },
+                {"Enum - Classes e Métodos", ExemploEnum.Executar },
+                {"Struct - Classes e Métodos", ExemploStruct.Executar },
+                {"Struct vs Classe - Classes e Métodos", StructVsClasse.Executar },
+                {"Valor vs Referencia - Classes e Métodos", ValorVsReferencia.Executar },
+                {"Parâmetros por Referência - Classes e Métodos", ParametrosPorReferencia.Executar },
+                {"Parâmetros com Valor Padrão - Classes e Métodos", ParametroPadrao.Executar },
+
+                //Coleções
+                {"Array - Coleções", Colecoes.Array.Executar },
+                {"List - Coleções", ColecoesList.Executar },
+
 
             });
 
