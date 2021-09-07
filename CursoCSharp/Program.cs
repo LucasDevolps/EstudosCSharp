@@ -81,6 +81,7 @@ namespace CursoCSharp {
                 {"Construtor This - Orientação a Objetos", ConstrutorThis.Executar },
                 {"Encapsulamento - Orientação a Objetos", OO.Encapsulamento.Executar },
                 {"Polimorfismo - Orientação a Objetos", OO.Polimorfismo.Executar },
+                {"Abstract - Orientação a Objetos", OO.Abstract.Executar },
             });
 
             central.SelecionarEExecutar();
