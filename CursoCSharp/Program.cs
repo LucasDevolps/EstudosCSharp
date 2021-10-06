@@ -113,6 +113,8 @@ namespace CursoCSharp {
 
                 //Tópicos avançados
                 {"LINQ #01 - Usando Api", LINQ1.Executar },
+                {"LINQ #02 - Usando Api", LINQ2.Executar },
+                
 
             });
 
