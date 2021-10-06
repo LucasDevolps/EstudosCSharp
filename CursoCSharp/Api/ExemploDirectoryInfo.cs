@@ -1,20 +1,11 @@
 ﻿using System;
-<<<<<<< HEAD
-using System.Collections.Generic;
-using System.Text;
-
-=======
 using System.IO;
->>>>>>> 6551ef14a02270d7491e8bf21360faf4b9d11149
 namespace CursoCSharp.Api
 {
     class ExemploDirectoryInfo
     {
         public static void Executar()
         {
-<<<<<<< HEAD
-
-=======
             //Alterar depois
             var dirProjeto = @"C:\@gitEstudos\EstudosCSharp\CursoCSharp";
 
@@ -44,7 +35,6 @@ namespace CursoCSharp.Api
             Console.WriteLine(dirInfo.FullName);
             Console.WriteLine(dirInfo.Root);
             Console.WriteLine(dirInfo.Parent);
->>>>>>> 6551ef14a02270d7491e8bf21360faf4b9d11149
         }
     }
 }
