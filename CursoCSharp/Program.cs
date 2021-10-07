@@ -112,10 +112,11 @@ namespace CursoCSharp {
                 {"Exemplo Timespan - Usando Api", ExemploTimeSpan.Executar },
 
                 //Tópicos avançados
-                {"LINQ #01 - Usando Api", LINQ1.Executar },
-                {"LINQ #02 - Usando Api", LINQ2.Executar },
-                {"Nullables - Usando Api", Nullables.Executar },
-                
+                {"LINQ #01 - Tópicos Avançados", LINQ1.Executar },
+                {"LINQ #02 - Tópicos Avançados", LINQ2.Executar },
+                {"Nullables - Tópicos Avançados", Nullables.Executar },
+                {"Dynamics - Tópicos Avançados", Dynamics.Executar },
+                {"Genéricos - Tópicos Avançados", Genericos.Executar },
 
             });
 
