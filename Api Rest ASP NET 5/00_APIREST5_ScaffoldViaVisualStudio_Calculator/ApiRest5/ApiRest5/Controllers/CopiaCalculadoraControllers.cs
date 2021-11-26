@@ -9,12 +9,11 @@ namespace ApiRest5.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class CalculatorController : ControllerBase
+    public class CopiaCalculadoraControllers : Controller
     {
+        private readonly ILogger<CopiaCalculadoraControllers> _logger;
 
-        private readonly ILogger<CalculatorController> _logger;
-
-        public CalculatorController(ILogger<CalculatorController> logger)
+        public CopiaCalculadoraControllers(ILogger<CopiaCalculadoraControllers> logger)
         {
             _logger = logger;
         }
@@ -46,7 +45,7 @@ namespace ApiRest5.Controllers
         */
 
         [HttpGet("{operation}/{firstNumber}/{secondNumber}")]
-        public IActionResult Calc(string calc,string firstNumber, string secondNumber)
+        public IActionResult Calc(string calc, string firstNumber, string secondNumber)
         {
             calc = HttpContext.Request.Path.Value.ToString();
 
@@ -72,12 +71,12 @@ namespace ApiRest5.Controllers
             }
             return BadRequest("Invalid Input");
         }
-        
+
 
         private decimal ConvertToDecimal(string strNumber)
         {
             decimal decimalValue;
-            if(decimal.TryParse(strNumber, out decimalValue))
+            if (decimal.TryParse(strNumber, out decimalValue))
             {
                 return decimalValue;
             }
@@ -95,3 +94,4 @@ namespace ApiRest5.Controllers
         }
     }
 }
+
